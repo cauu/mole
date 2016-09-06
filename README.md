@@ -1,4 +1,4 @@
-# Mole(墨乐) - a github-base note
+# 墨乐 - Mole, a github-base note
 
 [![Build Status](https://travis-ci.org/phodal/mole.svg?branch=master)](https://travis-ci.org/phodal/mole)
 
@@ -21,17 +21,54 @@ Features:
  - Chrome插件(TBC)
  - 微信集成(TBC)
 
+Setup GitHub
+---
+
+1. create a GitHub branch with gh-pages for note
+2. open App and setup
+ 
+ - Repo
+ - Token
+ - Commit Username
+ - Commit Email
+
 Documents
 ---
 
 ### Setup
+
+Basic
 
 ```
 git clone git@github.com:phodal/mole.git
 npm install
 ```
 
-### 技术栈
+Run Server
+
+```
+npm start
+```
+
+Run Android
+
+```
+./ci/run-android.sh
+```
+
+Run iOS
+
+```
+./ci/run-ios.sh
+```
+
+Run Electron
+
+```
+npm run electron
+```
+
+技术栈
 
  - React MDL
  - Fetch 
@@ -50,7 +87,7 @@ More
 
 ### API
 
-Note API in Design
+#### Note API
 
 Example: [https://github.com/phodal/mole-test/blob/gh-pages/api/all.json](https://github.com/phodal/mole-test/blob/gh-pages/api/all.json)
 
@@ -64,9 +101,9 @@ Example: [https://github.com/phodal/mole-test/blob/gh-pages/api/all.json](https:
 }
 ```
 
-GitHub API
+#### GitHub API
 
-Idea Example: [https://github.com/phodal/ideas/issues](https://github.com/phodal/ideas/issues)
+Ideas Example: [https://github.com/phodal/ideas/issues](https://github.com/phodal/ideas/issues)
 
 Commit History: [https://api.github.com/repos/phodal/mole-test/commits?path=notes/hello-world.md](https://api.github.com/repos/phodal/mole-test/commits?path=notes/hello-world.md)
 
